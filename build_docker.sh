@@ -1,0 +1,1 @@
+docker build -t arunsworld/django-apache:Anaconda3-5.2.0 .
