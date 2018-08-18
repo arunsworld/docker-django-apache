@@ -30,7 +30,7 @@ RUN wget --quiet https://repo.continuum.io/archive/Anaconda3-5.2.0-Linux-x86_64.
     && conda update --prefix /opt/conda -y anaconda \
     && conda clean -a -y
 
-RUN pip install --upgrade pip && pip --no-cache-dir install msgpack django djangorestframework django-cors-headers behave django-admin-view-permission
+RUN pip install --upgrade pip && pip --no-cache-dir install msgpack django djangorestframework django-cors-headers behave django-admin-view-permission coreapi djangorestframework-simplejwt
 
 ADD PyHamcrest-master.tar.gz /tmp/
 
